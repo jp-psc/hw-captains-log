@@ -13,19 +13,19 @@ function Index(props) {
                         </li>
                     )}
                 </ul>
-                <a href="/log/new">Add...</a>
+                <a href="/logs/new">Add...</a>
 
                 <br/><br/><br/>
 
-                {/* <form action="/log/seed" method="POST">
+                <form action="/logs/seed" method="POST">
                     <button>SEED</button>
                 </form>
 
                 <br/>
 
-                <form action="/log/clear?_method=DELETE" method="POST">
+                <form action="/logs/clear?_method=DELETE" method="POST">
                     <button>CLEAR</button>
-                </form> */}
+                </form>
             </div>
     )
 }

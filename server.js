@@ -11,6 +11,8 @@ const connectDB = require('./config/db')
 
 connectDB()
 
+const methodOverride = require('method-override')
+
 const logRoutes = require('./routes/logRoutes')
 
 const { createEngine } = require('jsx-view-engine')
@@ -19,6 +21,8 @@ app.set('view engine', 'jsx')
 app.engine('jsx', createEngine())
 
 app.use(express.urlencoded({ extended: true }))
+
+app.use(methodOverride('_method'))
 
 app.use('/logs', logRoutes)
 

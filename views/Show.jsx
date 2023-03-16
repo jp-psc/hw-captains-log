@@ -6,7 +6,7 @@ function Show(props) {
             <h1>Show View</h1>
             <p>On <strong>{props.log.title}</strong>: {props.log.shipIsBroken ? 'We are sinking' : 'We must maintain!'}</p>
             <p>Today's entry: {props.log.entry}</p>
-            {/* <p>{props.log.createdAt}</p> */}
+            <p>{props.date}</p>
 
 
             <a href={`/logs/${props.log._id}/edit`}>Edit</a>
